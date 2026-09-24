@@ -22,7 +22,8 @@ class StoreBookRequest extends FormRequest
             'tahun_terbit' => 'required|integer|min:1900|max:'.date('Y'),
             'isbn' => 'nullable|string|max:20',
             'stok' => 'required|integer|min:0',
-            'category_id' => 'required|integer',
+            'category_id' => 'required|integer|exists:categories,id',
+            'category_id.exists' => 'Kategori yang dipilih tidak valid.',
         ];
     }
 
