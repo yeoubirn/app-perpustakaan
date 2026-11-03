@@ -12,12 +12,31 @@
         nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
         nav ul li a { color: #cbd5e1; text-decoration: none; padding: 6px 4px; }
         nav ul li a.active { color: #fff; font-weight: bold; border-bottom: 2px solid #fff; }
+        nav .navbar-user { display: flex; align-items: center; gap: 12px; color: #cbd5e1; font-size: 14px; }
+        nav .btn-logout { background: none; border: 1px solid #cbd5e1; color: #cbd5e1; padding: 4px 10px; border-radius: 4px; cursor: pointer; font-size: 14px; }
+        nav .btn-logout:hover { background: #1e40af; color: #fff; }
         main { max-width: 900px; margin: 0 auto; padding: 30px 40px; }
         table { border-collapse: collapse; width: 100%; margin-top: 16px; }
         th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
         .alert-success { background: #d1fae5; color: #065f46; padding: 10px 14px; border-radius: 4px; margin-bottom: 16px; }
         .btn { display: inline-block; padding: 6px 14px; background: #2563eb; color: #fff; text-decoration: none; border-radius: 4px; border: none; cursor: pointer; }
         form.inline { display: inline; }
+
+        .form-box { max-width: 500px; }
+        .form-box label { display: block; margin-top: 12px; font-weight: bold; }
+        .form-box input, .form-box select, .form-box textarea { width: 100%; padding: 6px; margin-top: 4px; }
+        .form-box .error { color: #b91c1c; font-size: 14px; margin-top: 4px; }
+        .form-box .btn { margin-top: 20px; padding: 8px 16px; }
+        .form-box .readonly { background: #f3f4f6; padding: 8px; border-radius: 4px; margin-top: 4px; }
+        .checkbox-list { border: 1px solid #ccc; border-radius: 4px; padding: 10px; margin-top: 4px; max-height: 200px; overflow-y: auto; }
+        .form-box .checkbox-list label { font-weight: normal; margin-top: 0; }
+        .form-box .checkbox-list input { width: auto; }
+        .info th { width: 160px; background: #f3f4f6; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 13px; font-weight: bold; }
+        .badge-dikembalikan { background: #dcfce7; color: #166534; }
+        .badge-dipinjam { background: #fef3c7; color: #92400e; }
+        .badge-terlambat { background: #fee2e2; color: #991b1b; }
+
         footer { text-align: center; padding: 20px; color: #6b7280; font-size: 14px; border-top: 1px solid #e5e7eb; margin-top: 40px; }
     </style>
 </head>

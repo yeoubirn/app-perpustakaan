@@ -1,28 +1,9 @@
-{{-- File: resources/views/loans/index.blade.php --}}
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Daftar Peminjaman</title>
-    <style>
-        body { font-family: sans-serif; margin: 40px; }
-        table { border-collapse: collapse; width: 100%; margin-top: 16px; }
-        th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
-        .success { background: #d1fae5; color: #065f46; padding: 10px 14px; border-radius: 4px; margin-top: 16px; }
-        .btn { display: inline-block; padding: 6px 14px; background: #2563eb; color: #fff; text-decoration: none; border-radius: 4px; }
-        form.inline { display: inline; }
-        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 13px; font-weight: bold; }
-        .badge-dikembalikan { background: #dcfce7; color: #166534; }
-        .badge-dipinjam { background: #fef3c7; color: #92400e; }
-        .badge-terlambat { background: #fee2e2; color: #991b1b; }
-    </style>
-</head>
-<body>
-    <h1>Daftar Peminjaman</h1>
+@extends('layouts.app')
 
-    @if (session('success'))
-        <div class="success">{{ session('success') }}</div>
-    @endif
+@section('title', 'Daftar Peminjaman')
+
+@section('content')
+    <h1>Daftar Peminjaman</h1>
 
     <p><a href="{{ route('loans.create') }}" class="btn">+ Tambah Peminjaman</a></p>
 
@@ -84,5 +65,4 @@
     </table>
 
     {{ $loans->links() }}
-</body>
-</html>
+@endsection

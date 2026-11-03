@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>Detail Peminjaman</title>
-    <style>
-        body { font-family: sans-serif; margin: 40px; max-width: 600px; }
-        table { border-collapse: collapse; width: 100%; margin-top: 16px; }
-        th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
-        .info th { width: 160px; background: #f3f4f6; }
-        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 13px; font-weight: bold; }
-        .badge-dikembalikan { background: #dcfce7; color: #166534; }
-        .badge-dipinjam { background: #fef3c7; color: #92400e; }
-        .badge-terlambat { background: #fee2e2; color: #991b1b; }
-    </style>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title', 'Detail Peminjaman')
+
+@section('content')
     <h1>Detail Peminjaman</h1>
     <p><a href="{{ route('loans.index') }}">&larr; Kembali ke daftar peminjaman</a></p>
 
@@ -64,5 +52,4 @@
             @endforeach
         </tbody>
     </table>
-</body>
-</html>
+@endsection
